@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Court | Smash Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">SMASH<span>ARENA</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html" class="active">Book Court</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>RESERVE YOUR <span>COURT</span></h1>
+        <p>Select your date, court, and time slots below.</p>
+    </header>
+
+    <main class="booking-container">
+        <div class="date-picker-container">
+            <label for="booking-date">Select Date:</label>
+            <input type="date" id="booking-date">
+        </div>
+
+        <div class="courts-grid" id="courts-container">
+            <!-- Courts will be generated via JS -->
+        </div>
+    </main>
+
+    <div class="cart-summary" id="cart-summary">
+        <h3>Selected Slots</h3>
+        <ul id="selected-slots-list"></ul>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-price">Rs. 0</span>
+        </div>
+        <button id="checkout-btn" class="btn-primary">Proceed to Payment</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">SMASH<span>ARENA</span></div>
+            <p>&copy; 2026 Smash Arena Indoor Stadium. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="booking-logic.js"></script>
+</body>
+
+</html>
